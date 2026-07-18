@@ -31,13 +31,11 @@ module "vpc" {
   enable_dns_hostnames = true
 }
 
-/*
+
 data "tfe_outputs" "source_workspace" {
   workspace    = var.workspace_name
   organization = var.organization_name
 }
-*/
-
 
 
 resource "aws_instance" "app_server" {
